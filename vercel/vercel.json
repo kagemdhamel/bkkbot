@@ -1,5 +1,8 @@
 {
   "builds": [
-    { "src": "api/generate_bkk.py", "use": "@vercel/python" }
+    {
+      "src": "api/generate_bkk.js",
+      "use": "@vercel/node"
+    }
   ]
 }
