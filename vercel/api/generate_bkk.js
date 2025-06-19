@@ -1,4 +1,4 @@
-import { createCanvas, loadImage, registerFont } from 'canvas';
+import { createCanvas, loadImage, GlobalFonts } from '@napi-rs/canvas';
 import fetch from 'node-fetch';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -24,7 +24,7 @@ export default async function handler(req, res) {
     } = req.body;
 
     const fontPath = path.join(__dirname, 'PlaypenSans-Regular.ttf');
-    registerFont(fontPath, { family: 'Playpen' });
+    GlobalFonts.registerFromPath(fontPath, 'Playpen');
 
     const image = await loadImage(path.join(__dirname, 'BKK Kosong.png'));
     const canvas = createCanvas(image.width, image.height);
