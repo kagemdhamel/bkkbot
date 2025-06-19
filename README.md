@@ -106,4 +106,4 @@ BKK-250619-1630
 
 ## 🧑‍💻 Developer
 
-Created by \Abu4hsan — Based on ChatGPT-powered integration with Python, Telegram API, Vercel, and Cloudflare Workers.
+Created by \[Abu4hsan] — with Python, Telegram API, Vercel, and Cloudflare Workers.
